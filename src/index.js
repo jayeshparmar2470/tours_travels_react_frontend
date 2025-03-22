@@ -5,6 +5,16 @@ import App from './App';
 import { BrowserRouter , HashRouter as Router} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+document.addEventListener('click', (event) => {
+  const { target } = event;
+  if (target.tagName === 'A' && target.getAttribute('href').startsWith('/')) {
+    event.preventDefault(); // Prevent default navigation
+    const href = target.getAttribute('href'); // Get the href value (e.g., "/about")
+    const subdirectory = '/reponame/#'; // Add your subdirectory here
+    window.location.hash = `${subdirectory}${href}`; // Update the hash
+  }
+});
+
 root.render(
   <React.StrictMode>
     <Router basename="/tours_travels_django_react">
