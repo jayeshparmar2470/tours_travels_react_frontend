@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Not Found</title>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      const segment = 1; // Adjust this if your app is not at the root of the domain
+      const path = window.location.pathname.split('/').slice(segment).join('/');
+      window.location.href = `/${path}`;
+    </script>
   </head>
   <body>
-    <script type="text/javascript">
-      // Redirect any 404 (page not found) request to the homepage (index.html)
-      window.location.replace(window.location.pathname);
-    </script>
+    <p>Redirecting...</p>
   </body>
 </html>
