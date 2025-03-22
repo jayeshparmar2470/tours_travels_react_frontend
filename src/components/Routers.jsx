@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route, Navigate} from 'react-router-dom';
+import {Routes,HashRouter as Router, Route, Navigate} from 'react-router-dom';
 
 import Home from '../pages/Home'
 import Tour from '../pages/Tour'
@@ -13,7 +13,7 @@ import Mybookings from './Mybookings'
 const Routers = () => {
   return (
     
-      <Routes>
+      <Router>
         <Route path='/' element={<Navigate to ='/home'/>} />
         <Route path='/home' element={<Home/>} />
         <Route path='/tour' element={<Tour/>} />
@@ -24,7 +24,7 @@ const Routers = () => {
         <Route path='/bookinglayout/:id'   element={<Bookinglayout/>} />
         <Route path='/thankyou' element={<ThankYou/>} />
         <Route path='/mybookings' element={<Mybookings/>} />
-    </Routes>
+    </Router>
     
     
   )
