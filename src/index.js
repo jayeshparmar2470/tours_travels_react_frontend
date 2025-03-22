@@ -17,7 +17,7 @@ document.addEventListener('click', (event) => {
 
 root.render(
   <React.StrictMode>
-    <Router basename="/tours_travels_django_react">
+    <Router>
     <App />
     </Router>
   </React.StrictMode>
