@@ -10,8 +10,9 @@ document.addEventListener('click', (event) => {
   if (target.tagName === 'A' && target.getAttribute('href').startsWith('/')) {
     event.preventDefault(); // Prevent default navigation
     const href = target.getAttribute('href'); // Get the href value (e.g., "/about")
-    const subdirectory = '/reponame/#'; // Add your subdirectory here
-    window.location.hash = `${subdirectory}${href}`; // Update the hash
+    // const subdirectory = '/reponame/#'; // Add your subdirectory here
+    // window.location.hash = `${subdirectory}${href}`; // Update the hash
+    window.location.hash = `${href}`; // Update the hash
   }
 });
 
