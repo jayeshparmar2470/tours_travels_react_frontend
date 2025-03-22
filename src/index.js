@@ -17,11 +17,11 @@ document.addEventListener('click', (event) => {
 });
 
 root.render(
-  <React.StrictMode>
+  <React>
     <Router>
     <App />
     </Router>
-  </React.StrictMode>
+  </React>
 );
 
 // If you want to start measuring performance in your app, pass a function
