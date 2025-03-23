@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './Compcss/mybooking.css'
 import axios from 'axios';
+import API_BASE_URL from '../config';
 
 const Mybookings = () => {
   const [bookings, setBookings] = useState([]);
   const token = localStorage.getItem('userToken'); // Replace with your token storage method
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/api/mybookings/', {
+    // fetch('http://127.0.0.1:8000/api/api/mybookings/', {
+    fetch(`${API_BASE_URL}/api/mybookings/`, {
       method: 'GET',
       headers: {
         // 'Authorization': `Bearer ${localStorage.getItem('userToken')}`,
@@ -28,7 +30,8 @@ const Mybookings = () => {
   }, [token]);
   const handeldelete =(e)=>{
     console.log(token)
-    axios.delete(`http://127.0.0.1:8000/api/api/deletebooking/${e.target.id}`,
+    // axios.delete(`http://127.0.0.1:8000/api/api/deletebooking/${e.target.id}`,
+    axios.delete(`${API_BASE_URL}/api/deletebooking/${e.target.id}`,
     {
       headers:{"Authorization":`Token ${token}`, 
       'Content-Type': 'application/json'}

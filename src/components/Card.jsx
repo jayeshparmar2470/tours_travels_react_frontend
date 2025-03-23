@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 // import './Compcss/card.css'
 import axios from 'axios';
 import CardSec from './CardSec'; // Import Cardsec component
+import API_BASE_URL from '../config';
 
 const Card = () => {
-   const url = "http://127.0.0.1:8000/api/tours/";
+   // const url = "http://127.0.0.1:8000/api/tours/";
+   const url = `${API_BASE_URL}/tours/`;
  
 
  const useFetch=(url)=>{

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState,useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import API_BASE_URL from '../conifg';
 const user=localStorage.getItem('username');
 console.log(user)
 // const userToken=parseInt(localStorage.getItem('userToken'));
@@ -23,7 +24,8 @@ const Booking = () => {
 
   useEffect(() => {
     // Fetch tour details when the component mounts
-    axios.get(`http://127.0.0.1:8000/api/api/tours/${params.id}/`)
+    // axios.get(`http://127.0.0.1:8000/api/api/tours/${params.id}/`)
+    axios.get(`${API_BASE_URL}/api/tours/${params.id}/`)
       .then((response) => {
         console.log('tourdetails',response.data);
         setTourDetails(response.data);
@@ -73,7 +75,8 @@ const Booking = () => {
   // console.log(token)
   // console.log(formData)
 
-    axios.post('http://127.0.0.1:8000/api/api/bookings/',formData,{
+    // axios.post('http://127.0.0.1:8000/api/api/bookings/',formData,{
+    axios.post(`${API_BASE_URL}/api/bookings/`,formData,{
       headers:{
         "Authorization":`Token ${token}`, 
         'Content-Type':'application/json'

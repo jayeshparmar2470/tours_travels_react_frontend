@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import { useParams,useNavigate } from 'react-router-dom';
 import './layoutcss/bookinglayout.css'
 import axios from 'axios';
+import API_BASE_URL from '../config';
 const Bookinglayout = () => {
 
      const navigate=useNavigate();
@@ -15,7 +16,8 @@ const Bookinglayout = () => {
     useEffect(() => {
       const fetchTourData = async () => {
         try {
-          const response = await axios.get(`http://127.0.0.1:8000/api/api/tours/${id}/`);
+          // const response = await axios.get(`http://127.0.0.1:8000/api/api/tours/${id}/`);
+          const response = await axios.get(`${API_BASE_URL}/api/tours/${id}/`);
       
           // setimgurl(response.data.photo);
           setTourData(response.data);

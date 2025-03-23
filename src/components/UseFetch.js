@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios';
+import API_BASE_URL from '../config';
 
 const useFetch = (url) => {
    const [data, setData] = useState([])
@@ -10,7 +11,8 @@ const useFetch = (url) => {
       const fetchData = async() => {
          setLoading(true)
 
-            axios.get('http://127.0.0.1:8000/api/tours/')
+            // axios.get('http://127.0.0.1:8000/api/tours/')
+            axios.get(`${API_BASE_URL}/tours/`)
            
             .then((response) => {
                 setData(response.data);

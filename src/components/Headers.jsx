@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // import logo from '../assets/images/logo.png';
 import "./Compcss/Headers.css";
 import logo from "../images/ss1.png";
+import API_BASE_URL from "../config";
 
 const Headers = () => {
   const [username, setUsername] = useState("");
@@ -13,7 +14,8 @@ const Headers = () => {
         // Include the user token in the request headers for authentication
         const token = localStorage.getItem("userToken"); // Replace with your token storage method
         const response = await fetch(
-          "http://127.0.0.1:8000/api/api/get-user-info/",
+          // "http://127.0.0.1:8000/api/get-user-info/",
+          `${API_BASE_URL}/get-user-info/`,
           {
             method: "GET",
             headers: {
