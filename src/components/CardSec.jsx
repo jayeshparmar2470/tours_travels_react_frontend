@@ -18,7 +18,7 @@ const CardSec = ({ tour }) => {
       >
         <div className="card card_effect">
           <img
-           src={`${imageUrl}/${photo}`}
+           src={`${imageUrl}${photo}`}
             alt="tour-img"
             width="100%"
             className="card-img-top"
