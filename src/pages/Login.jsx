@@ -26,8 +26,9 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log(`formData:${formData}`)
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/api/login/`, formData);
+      const response = await axios.post(`${API_BASE_URL}/api/login/`, formData);
       console.log("User logged in:", response);
       // After successful login, store the token in local storage
       localStorage.setItem('userToken', response.data.token);
