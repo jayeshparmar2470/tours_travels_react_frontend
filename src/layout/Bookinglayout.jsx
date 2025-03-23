@@ -54,7 +54,7 @@ const Bookinglayout = () => {
     <>
         <div className="container-fluid  border-primary p-0">
             {/* <div className='container-fluid  d-flex justify-content-center align-items-center img_container border-primary p-0'><img className="w-100 tour_img" src={`http://127.0.0.1:8000${tourData.photo}`} alt="tour-img"  /></div> */}
-            <div className='container-fluid  d-flex justify-content-center align-items-center img_container border-primary p-0'><img className="w-100 tour_img" src={`${API_BASE_URL}${tourData.photo}`} alt="tour-img"  /></div>
+            <div className='container-fluid  d-flex justify-content-center align-items-center img_container border-primary p-0'><img className="w-100 tour_img" src={`${tourData.photo}`} alt="tour-img"  /></div>
             <div className="container p-0 mt-4 border-info ">
                 <div className="text-dark text_title fs-1 p-2">{tourData.title}</div>
                 <div className="parameters row m-0 text_decpt">
