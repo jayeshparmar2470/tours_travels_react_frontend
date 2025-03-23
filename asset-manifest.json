@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tours_travels_django_react/static/css/main.2f6ef626.css",
-    "main.js": "/tours_travels_django_react/static/js/main.aefe1081.js",
+    "main.js": "/tours_travels_django_react/static/js/main.0d690e4a.js",
     "static/media/tour06.jpg": "/tours_travels_django_react/static/media/tour06.61ab969a7f3f172fa8c0.jpg",
     "static/media/tour05.jpg": "/tours_travels_django_react/static/media/tour05.f86cd200463751a5e2ed.jpg",
     "static/media/tour04.jpg": "/tours_travels_django_react/static/media/tour04.e9b40920b0c3a962bce9.jpg",
@@ -12,10 +12,10 @@
     "static/media/ss1.png": "/tours_travels_django_react/static/media/ss1.c3d4a9902a54564b8546.png",
     "index.html": "/tours_travels_django_react/index.html",
     "main.2f6ef626.css.map": "/tours_travels_django_react/static/css/main.2f6ef626.css.map",
-    "main.aefe1081.js.map": "/tours_travels_django_react/static/js/main.aefe1081.js.map"
+    "main.0d690e4a.js.map": "/tours_travels_django_react/static/js/main.0d690e4a.js.map"
   },
   "entrypoints": [
     "static/css/main.2f6ef626.css",
-    "static/js/main.aefe1081.js"
+    "static/js/main.0d690e4a.js"
   ]
 }
