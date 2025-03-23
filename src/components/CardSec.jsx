@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Compcss/Cardsec.css";
-import {imageUrl} from "../config";
 const CardSec = ({ tour }) => {
   if (!tour) {
     // Handle the case where 'tour' is undefined or null
@@ -18,7 +17,7 @@ const CardSec = ({ tour }) => {
       >
         <div className="card card_effect">
           <img
-           src={`${imageUrl}${photo}`}
+           src={`${photo}`}
             alt="tour-img"
             width="100%"
             className="card-img-top"
