@@ -3,12 +3,14 @@ import React, { useState, useEffect } from 'react';
 import CardSec from '../components/CardSec';
 import UseFetch from '../components/UseFetch';
 import './tour.css';
+import API_BASE_URL from '../config';
 
 const Tours = () => {
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
 
-  const { data: tours, loading, error } = UseFetch('http://127.0.0.1:8000/api/tours');
+  // const { data: tours, loading, error } = UseFetch('http://127.0.0.1:8000/api/tours');
+  const { data: tours, loading, error } = UseFetch(`${API_BASE_URL}/api/tours`);
 
   useEffect(() => {
     if (tours.length > 0) {
