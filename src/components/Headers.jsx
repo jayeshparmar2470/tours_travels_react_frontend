@@ -15,7 +15,7 @@ const Headers = () => {
         const token = localStorage.getItem("userToken"); // Replace with your token storage method
         const response = await fetch(
           // "http://127.0.0.1:8000/api/get-user-info/",
-          `${API_BASE_URL}/get-user-info/`,
+          `${API_BASE_URL}/api/get-user-info/`,
           {
             method: "GET",
             headers: {
