@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 import { useParams,useNavigate } from 'react-router-dom';
 import './layoutcss/bookinglayout.css'
 import axios from 'axios';
-import API_BASE_URL from '../config';
+import {API_BASE_URL} from '../config';
 const Bookinglayout = () => {
 
      const navigate=useNavigate();

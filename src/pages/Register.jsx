@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import {  useNavigate } from 'react-router-dom'
-import './pagescss/register.css'
+import {  useNavigate } from 'react-router-dom';
+import './pagescss/register.css';
+import {API_BASE_URL} from "../config";
 const Register = () => {
   const [formData, setFormData] = useState({
     username: '',
@@ -58,7 +59,8 @@ const Register = () => {
       // Clear the password error message
       setPasswordError('');
 
-      const response = await axios.post('http://127.0.0.1:8000/api/api/register/', formData);
+      // const response = await axios.post('http://127.0.0.1:8000/api/api/register/', formData);
+      const response = await axios.post(`${API_BASE_URL}/api/register/`, formData);
       console.log('User registered:', response.data);
       alert("you are registered");
       // Redirect to login or handle success

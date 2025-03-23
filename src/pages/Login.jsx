@@ -3,6 +3,7 @@ import axios from "axios";
 import "./pagescss/login.css";
 import {  useNavigate } from 'react-router-dom';
 // import bgimg from '../images/landscape1.jpg'
+import {API_BASE_URL} from "../config"
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/api/login/", formData);
+      const response = await axios.post(`${API_BASE_URL}/api/api/login/`, formData);
       console.log("User logged in:", response);
       // After successful login, store the token in local storage
       localStorage.setItem('userToken', response.data.token);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Compcss/mybooking.css'
 import axios from 'axios';
-import API_BASE_URL from '../config';
+import {API_BASE_URL} from '../config';
 
 const Mybookings = () => {
   const [bookings, setBookings] = useState([]);

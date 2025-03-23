@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState,useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import API_BASE_URL from '../config';
+import {API_BASE_URL} from '../config';
 const user=localStorage.getItem('username');
 console.log(user)
 // const userToken=parseInt(localStorage.getItem('userToken'));

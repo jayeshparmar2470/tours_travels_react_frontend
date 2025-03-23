@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import CardSec from '../components/CardSec';
 import UseFetch from '../components/UseFetch';
 import './tour.css';
-import API_BASE_URL from '../config';
+import {API_BASE_URL} from '../config';
 
 const Tours = () => {
   const [pageCount, setPageCount] = useState(0);

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import logo from '../assets/images/logo.png';
 import "./Compcss/Headers.css";
 import logo from "../images/ss1.png";
-import API_BASE_URL from "../config";
+import {API_BASE_URL} from "../config";
 
 const Headers = () => {
   const [username, setUsername] = useState("");
