@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/tours_travels_django_react/static/css/main.2f6ef626.css",
-    "main.js": "/tours_travels_django_react/static/js/main.d508b637.js",
-    "static/media/tour06.jpg": "/tours_travels_django_react/static/media/tour06.61ab969a7f3f172fa8c0.jpg",
-    "static/media/tour05.jpg": "/tours_travels_django_react/static/media/tour05.f86cd200463751a5e2ed.jpg",
-    "static/media/tour04.jpg": "/tours_travels_django_react/static/media/tour04.e9b40920b0c3a962bce9.jpg",
-    "static/media/landscape1.jpg": "/tours_travels_django_react/static/media/landscape1.d4f83c2299b1ae60c977.jpg",
-    "static/media/login2 .jpg": "/tours_travels_django_react/static/media/login2 .f4b97e87a5a05c4976d3.jpg",
-    "static/media/aboutxcv.jpg": "/tours_travels_django_react/static/media/aboutxcv.89aa250462bbe171edae.jpg",
-    "static/media/tour.jpg": "/tours_travels_django_react/static/media/tour.28b5eecb9972968fb82e.jpg",
-    "static/media/ss1.png": "/tours_travels_django_react/static/media/ss1.c3d4a9902a54564b8546.png",
-    "index.html": "/tours_travels_django_react/index.html",
-    "main.2f6ef626.css.map": "/tours_travels_django_react/static/css/main.2f6ef626.css.map",
-    "main.d508b637.js.map": "/tours_travels_django_react/static/js/main.d508b637.js.map"
+    "main.css": "/tours_travels_react_frontend/static/css/main.a13395d8.css",
+    "main.js": "/tours_travels_react_frontend/static/js/main.544be76a.js",
+    "static/media/tour06.jpg": "/tours_travels_react_frontend/static/media/tour06.61ab969a7f3f172fa8c0.jpg",
+    "static/media/tour05.jpg": "/tours_travels_react_frontend/static/media/tour05.f86cd200463751a5e2ed.jpg",
+    "static/media/tour04.jpg": "/tours_travels_react_frontend/static/media/tour04.e9b40920b0c3a962bce9.jpg",
+    "static/media/landscape1.jpg": "/tours_travels_react_frontend/static/media/landscape1.d4f83c2299b1ae60c977.jpg",
+    "static/media/login2 .jpg": "/tours_travels_react_frontend/static/media/login2 .f4b97e87a5a05c4976d3.jpg",
+    "static/media/aboutxcv.jpg": "/tours_travels_react_frontend/static/media/aboutxcv.89aa250462bbe171edae.jpg",
+    "static/media/tour.jpg": "/tours_travels_react_frontend/static/media/tour.28b5eecb9972968fb82e.jpg",
+    "static/media/ss1.png": "/tours_travels_react_frontend/static/media/ss1.c3d4a9902a54564b8546.png",
+    "index.html": "/tours_travels_react_frontend/index.html",
+    "main.a13395d8.css.map": "/tours_travels_react_frontend/static/css/main.a13395d8.css.map",
+    "main.544be76a.js.map": "/tours_travels_react_frontend/static/js/main.544be76a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f6ef626.css",
-    "static/js/main.d508b637.js"
+    "static/css/main.a13395d8.css",
+    "static/js/main.544be76a.js"
   ]
 }
